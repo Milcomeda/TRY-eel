@@ -1,0 +1,113 @@
+/* background: linear-gradient(to bottom right, rgb(0, 26, 114), rgb(58, 10, 65)); */
+
+
+body {
+    font-family: 'Roboto Slab','M PLUS Rounded 1c','Meiryo UI','sans-serif';
+    font-size: 1.5vw;
+
+}
+
+header {
+    display: inline-flex;
+    width: 100vw;
+    height: calc(100vh/10);
+    align-items: flex-end;
+}
+
+header .header-container {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+header .header-logo {
+    display: flex;
+    box-sizing: border-box;
+    width: 30%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    flex-direction: column;
+}
+
+header .header-logo img{
+    width: 25%;
+    height: auto;
+    margin: 0.5vmin 0px 0px 0.3vmin;
+}
+
+header .header-logo p {
+    display: flex;
+    font-size: 5.2vmin;
+    font-weight: 900;
+    color: rgb(0, 26, 114);
+    padding: 0px;
+    margin: 0px 0px 0px 0.4vmin;
+    overflow: hidden;
+    align-items: flex-end;
+}
+
+.navbtn {
+    display: flex;
+    box-sizing: border-box;
+    width: 70%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    text-align: right;
+
+}
+
+.navbtn nav {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbtn nav ul {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.customer-logo ul li {
+    list-style: none;
+    display: inline-flex;
+    height: 100%;
+    text-align: center;
+    align-items: flex-end;
+}
+
+.customer-logo ul li::after {
+    content: "|";
+    padding: 0 1vw;
+    color: rgb(63, 63, 63);
+}
+
+.customer-logo ul li:last-child:after {
+    content: "";
+}
+
+.nav-field {
+    display: inline-flex;
+    background-color: rgb(255, 255, 255);
+    width: 100vw;
+    height: calc((100vh/10)*9);
+    align-items: flex-start;
+    margin: 0.8vmin 0px 0px 0px;
+
+}
+
+.nav-field .side-containar {
+    display: flex;
+    background-color: rgb(245, 245, 245);
+    width: 15vw;
+    height: calc((100vh/10)*9);
+}
