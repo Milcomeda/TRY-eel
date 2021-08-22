@@ -9,9 +9,8 @@ body {
 
 header {
     display: inline-flex;
-    width: 100vw;
-    height: calc(100vh/10);
-    align-items: flex-end;
+    width: 100%;
+    height: calc(100%/10);
 }
 
 header .header-container {
@@ -40,14 +39,12 @@ header .header-logo img{
 }
 
 header .header-logo p {
-    display: flex;
     font-size: 5.2vmin;
     font-weight: 900;
     color: rgb(0, 26, 114);
     padding: 0px;
     margin: 0px 0px 0px 0.4vmin;
     overflow: hidden;
-    align-items: flex-end;
 }
 
 .navbtn {
@@ -58,7 +55,6 @@ header .header-logo p {
     padding: 0px;
     margin: 0px;
     text-align: right;
-
 }
 
 .navbtn nav {
@@ -80,7 +76,7 @@ header .header-logo p {
 .customer-logo ul li {
     list-style: none;
     display: inline-flex;
-    height: 100%;
+    height: 98%;
     text-align: center;
     align-items: flex-end;
 }
@@ -95,19 +91,164 @@ header .header-logo p {
     content: "";
 }
 
+
+
+
+
+
 .nav-field {
     display: inline-flex;
-    background-color: rgb(255, 255, 255);
-    width: 100vw;
-    height: calc((100vh/10)*9);
+    position: relative;
+    background-color: rgb(220, 220, 220);
+    width: 100%;
+    height: calc((100vh/10)*8.8);
     align-items: flex-start;
-    margin: 0.8vmin 0px 0px 0px;
-
+    margin: 0vmin 0px 0px 0px;
 }
 
-.nav-field .side-containar {
+.side-containar {
     display: flex;
-    background-color: rgb(245, 245, 245);
-    width: 15vw;
-    height: calc((100vh/10)*9);
+    background: linear-gradient(to bottom,rgb(25, 20, 90) 3%, rgb(0, 26, 114), rgb(58, 10, 65));
+    width: 15%;
+    height: calc((100vh/10)*8.8);
+}
+
+.main-header {
+    position: relative;
+    background: linear-gradient(to top right, rgb(0, 26, 114), rgb(58, 10, 65));
+    width: 100%;
+    height: 35%;
+}
+
+.main-header p {
+    color: rgb(250, 250, 250);
+    padding-left: 2.5vw;
+    margin-top: 2vw;
+    line-height: 99%;
+}
+
+
+
+
+
+
+.main-common-link {
+    display: inline-flex;
+    height: 88%;
+    position: absolute;
+    top: 6.5vw;
+    left: 15vw;
+}
+
+.main-containar {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+input[type="radio"] {display: none;}
+
+.common-label {
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    padding: 0 1vw;
+    background: linear-gradient(to top right, rgb(0, 26, 114), rgb(58, 10, 65));
+    border-radius: 5px 5px 0px 0px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(58, 10, 65);
+}
+
+.tab_btn {
+    width: calc(100%/3);
+    display: block;
+    text-align: center;
+    float: left;
+}
+
+.common-tab {
+    display: none;
+    clear: both;
+    overflow: auto;
+    width: 50vw;
+    height: 90%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 3px rgb(126, 126, 126);
+    border-radius: 0px 10px 10px 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(103, 31, 112);
+}
+
+#common1:checked ~ #common1-contents,
+#common2:checked ~ #common2-contents,
+#common3:checked ~ #common3-contents {
+    display: block;
+}
+
+input:checked + label {
+    background: rgb(255, 255, 255);
+    color: rgb(0, 26, 114);
+}
+
+
+
+
+
+
+.main-group-link {
+    display: inline-flex;
+    height: 88%;
+    position: absolute;
+    top: 6.5vw;
+    left: 68vw;
+}
+
+.group-containar {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+input[type="radio"] {display: none;}
+
+.group-label {
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    padding: 0 1vw;
+    background: linear-gradient(to top right, rgb(0, 26, 114), rgb(58, 10, 65));
+    border-radius: 5px 5px 0px 0px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(58, 10, 65);
+}
+
+.tab_btn_group {
+    width: calc(100%/3);
+    display: block;
+    text-align: center;
+    float: left;
+}
+
+.group-tab {
+    display: none;
+    clear: both;
+    overflow: hidden;
+    width: 28vw;
+    height: 90%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 3px rgb(126, 126, 126);
+    border-radius: 0px 10px 10px 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(103, 31, 112);
+}
+
+#syatai:checked ~ #syatai-contents,
+#souan:checked ~ #souan-contents,
+#es:checked ~ #es-contents {
+    display: block;
+}
+
+input:checked + label {
+    background: rgb(255, 255, 255);
+    color: rgb(0, 26, 114);
 }
