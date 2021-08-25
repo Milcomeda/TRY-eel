@@ -1,10 +1,13 @@
 /* background: linear-gradient(to bottom right, rgb(0, 26, 114), rgb(58, 10, 65)); */
 
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('..\\font\\Roboto_Slab\\RobotoSlab-VariableFont_wght.ttf');
+  }
 
 body {
-    font-family: 'Roboto Slab','M PLUS Rounded 1c','Meiryo UI','sans-serif';
+    font-family: 'Roboto Slab','Meiryo UI','sans-serif';
     font-size: 1.5vw;
-
 }
 
 header {
@@ -55,6 +58,7 @@ header .header-logo p {
     padding: 0px;
     margin: 0px;
     text-align: right;
+    align-self: center;
 }
 
 .navbtn nav {
@@ -77,8 +81,6 @@ header .header-logo p {
     list-style: none;
     display: inline-flex;
     height: 98%;
-    text-align: center;
-    align-items: flex-end;
 }
 
 .customer-logo ul li::after {
@@ -90,8 +92,6 @@ header .header-logo p {
 .customer-logo ul li:last-child:after {
     content: "";
 }
-
-
 
 
 
@@ -127,11 +127,6 @@ header .header-logo p {
     line-height: 99%;
 }
 
-
-
-
-
-
 .main-common-link {
     display: inline-flex;
     height: 88%;
@@ -155,7 +150,7 @@ input[type="radio"] {display: none;}
     border-radius: 5px 5px 0px 0px;
     border-style: solid;
     border-width: 3px;
-    border-color: rgb(58, 10, 65);
+    border-color: rgb(4, 93, 194);
 }
 
 .tab_btn {
@@ -169,14 +164,15 @@ input[type="radio"] {display: none;}
     display: none;
     clear: both;
     overflow: auto;
-    width: 50vw;
-    height: 90%;
+    width: 39vw;
+    height: 88%;
     background-color: rgb(255, 255, 255);
     box-shadow: 2px 2px 3px rgb(126, 126, 126);
     border-radius: 0px 10px 10px 10px;
     border-style: solid;
     border-width: 3px;
-    border-color: rgb(103, 31, 112);
+    border-color: rgb(4, 93, 194);
+    padding: 0px 0px 0px 1vw;
 }
 
 #common1:checked ~ #common1-contents,
@@ -200,7 +196,7 @@ input:checked + label {
     height: 88%;
     position: absolute;
     top: 6.5vw;
-    left: 68vw;
+    left: 56.5vw;
 }
 
 .group-containar {
@@ -218,7 +214,7 @@ input[type="radio"] {display: none;}
     border-radius: 5px 5px 0px 0px;
     border-style: solid;
     border-width: 3px;
-    border-color: rgb(58, 10, 65);
+    border-color: rgb(131, 27, 131);
 }
 
 .tab_btn_group {
@@ -232,14 +228,14 @@ input[type="radio"] {display: none;}
     display: none;
     clear: both;
     overflow: hidden;
-    width: 28vw;
-    height: 90%;
+    width: 39vw;
+    height: 88%;
     background-color: rgb(255, 255, 255);
     box-shadow: 2px 2px 3px rgb(126, 126, 126);
     border-radius: 0px 10px 10px 10px;
     border-style: solid;
     border-width: 3px;
-    border-color: rgb(103, 31, 112);
+    border-color: rgb(131, 27, 131);
 }
 
 #syatai:checked ~ #syatai-contents,
